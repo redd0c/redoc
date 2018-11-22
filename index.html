@@ -1,166 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Start-Up</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
-<link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
-<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-<link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
-<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
-<script src="js/jquery-1.7.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/cufon-yui.js"></script>
-<script src="js/cufon-replace.js"></script>
-<script src="js/Bilbo_400.font.js"></script>
-<script src="js/tms-0.4.1.js"></script>
-<script>
-$(document).ready(function(){				   	
-	$('.slider')._TMS({
-		show:0,
-		pauseOnHover:true,
-		prevBu:false,
-		nextBu:false,
-		playBu:false,
-		duration:900,
-		preset:'fade',
-		pagination:true,
-		pagNums:false,
-		slideshow:3000,
-		numStatus:false,
-		banners:'fade',
-		waitBannerAnimation:false,
-		progressBar:false
-	})		
-});
-</script>
-<!--[if lt IE 9]>
-<script src="js/html5.js"></script>
-<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-<![endif]-->
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:  "Lucida Console", Monaco, monospace;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: pink;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 100px;
+	height: 40px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+     background: rgba(0, 0, 0, 0.1);
+ color: pink;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    color: black;
+}
+</style>
 </head>
 <body>
 
+<video autoplay muted loop id="myVideo">
+  <source src="rain.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
-<header>
-<svg width="1366" height="4">	       			 			
-			 <rect width="32" height="1" fill="red">
-                 <animate attributeName="x" from="0" to="100%"
-                 dur="0.5s" fill="freeze" repeatCount="indefinite"/> 
-             </rect>
-			 <rect width="32" height="1" fill="red">
-                 <animate attributeName="x" from="100%" to="0"
-                 dur="0.5s" fill="freeze" repeatCount="indefinite"/> 
-             </rect>
-  <div>
-    <div>
-      <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
-      <nav>
-        <ul class="menu">
-          <li id="test1" class="current"><a href="index.html">[R.E.D.O.C.]</a></li>
-          <li id="test2"><a href="about.html">Довідка</a></li>
-          <li id="test3"><a href="services.html">Сервіс</a></li>
-          <li id="test4"><a href="products.html">Продукт</a></li>
-          <li id="test5"><a href="contacts.html">Контакти</a></li>
-        </ul>
-      </nav>
-      <div class="clear"></div>
-    </div>
-  </div>
-  
-</header>
-
-<svg width="1366" height="4">	       			 			
-			 <rect width="32" height="1" fill="aqua">
-                 <animate attributeName="x" from="0" to="100%"
-                 dur="0.5s" fill="freeze" repeatCount="indefinite"/> 
-             </rect>
-			 <rect width="32" height="1" fill="aqua">
-                 <animate attributeName="x" from="100%" to="0"
-                 dur="0.5s" fill="freeze" repeatCount="indefinite"/> 
-             </rect>
- 
- 
-<div id="slide">
-  <div class="slider">
-    <ul class="items">
-      <li><img src="images/slider-1.jpg" alt="">
-        <div class="banner">
-          <p class="text-1"><strong>Код</strong></p>
-          <p class="text-2">Якщо ти вмієш читати то й зможеш програмувати</p>
-        </div>
-      </li>
-      <li><img src="images/slider-2.jpg" alt="">
-        <div class="banner">
-          <p class="text-1"><strong>Створюй!!!</strong></p>
-          <p class="text-2">Єдина межа - твоя фантізія</p>
-        </div>
-      </li>
-      <li><img src="images/slider-3.jpg" alt="">
-        <div class="banner">
-          <p class="text-1"><strong>Ера ІТ </strong></p>
-          <p class="text-2">Твори свій світ зараз</p>
-        </div>
-      </li>
-    </ul>
-  </div>
+<div class="content">
+  <h1>[R.E.D.O.C.]</h1>
+  <p>Спільнота, що допомагає глибше зрозуміти та освоїти початківцю світ ІТ Технологій, програмування, WEB-дизайну та багато всього іншого зі сфери ІТ.</p>
+  <button id="myBtn"><a href="main.html"> ПЕРЕЙТИ</a></button>
 </div>
-<!--==============================content================================-->
-<section id="content">
-  <div class="container_12">
-    <div class="grid_6 box-1"> <img src="images/page1-img1.png" alt="">
-      <div class="extra-wrap">
-        <h2>Про нас...</h2>
-        <p>Спільнота, що вивчає, поширює та створює контент, пов'язаний зі світом ІТ технологій.</p>
-      </div>
-    </div>
-    <div class="grid_6 box-1"> <img src="images/page1-img2.png" alt="">
-      <div class="extra-wrap">
-        <h2>З чого почати...</h2>
-        <p>Ознайомлення із контентом нашого сайту допоможе правильно підібрати стартові пріоритети у начанні.</p>
-      </div>
-    </div>
-    <div class="grid_12 box-2">
-      <div>
-        <p class="text-3">Вітаємо на <span>[R.E.D.O.C.]</span> вебсайті!</p>
-        <p class="text-4">Ми допоможемо пізнати світ програмування.</p>
-      </div>
-    </div>
-    <div class="grid_8">
-      <h2 class="top-1">Наші ідеї</h2>
-      <div class="box-3">
-        <div> <img src="images/page1-img3.jpg" alt="" class="img-border"> <a href="#" class="link-2">Тут має бути файна ідея...</a>
-          <p>Тут має бути файна ідея...І тут тоже би шось пасувало...Ну і вже під шумок...</p>
-        </div>
-        <div> <img src="images/page1-img4.jpg" alt="" class="img-border"> <a href="#" class="link-2">І тут тоже би шось пасувало...</a>
-          <p>Тут має бути файна ідея...І тут тоже би шось пасувало...Ну і вже під шумок...</p>
-        </div>
-        <div class="last"> <img src="images/page1-img5.jpg" alt="" class="img-border"> <a href="#" class="link-2">Ну і вже під шумок...</a>
-          <p>Тут має бути файна ідея...І тут тоже би шось пасувало...Ну і вже під шумок...</p>
-        </div>
-      </div>
-      <a href="#" class="button top-4">Більше</a> </div>
-    <div class="grid_4">
-      <h2 class="top-1">Останні події</h2>
-      <div class="box-4 top-2">
-        <div class="date"><strong>17</strong><span>Листопад, 2018</span></div>
-        <p><a href="#" class="link">Тут має бути файна ідея...І тут тоже би шось пасувало...Ну і вже під шумок...</a><br>
-          Тут має бути файна ідея...І тут тоже би шось пасувало...Ну і вже під шумок...</p>
-      </div>
-      <div class="box-4 top-3">
-        <div class="date"><strong>18</strong><span>Листопад, 2018</span></div>
-        <p><a href="#" class="link">Тут має бути файна ідея...І тут тоже би шось пасувало...Ну і вже під шумок...</a><br>
-          Тут має бути файна ідея...І тут тоже би шось пасувало...Ну і вже під шумок...</p>
-      </div>
-      <a href="#" class="button top-4">...Усі</a> </div>
-    <div class="clear"></div>
-  </div>
-</section>
-<!--==============================footer=================================-->
-<footer>
-  <p>© 2018 [R.E.D.O.C.]<br>
-    Website Template by <a target="_blank" href="http://www.templatemonster.com/" class="link">redoc.com</a></p>
-  <div class="soc-icons"><span>Follow Us:</span><a href="#"><img src="images/icon-1.jpg" alt=""></a><a href="#"><img src="images/icon-2.jpg" alt=""></a><a href="#"><img src="images/icon-3.jpg" alt=""></a></div>
-</footer>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
 </body>
 </html>

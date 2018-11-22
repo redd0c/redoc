@@ -300,7 +300,7 @@ ul.menu li a:hover, ul.menu li.current a {
 #content {
 	width:100%;
 	padding:0px 0px 1px 0;
-	background:grey;
+	background:yellow;
 }
 .img-border {
 	border:#fff 8px solid;
