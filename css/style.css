@@ -1,13 +1,13 @@
 /* Global properties ======================================================== */
 html, body {
-    background: red;
+    background:purple;
 	width:100%;
 	padding:0;
 	margin:0;
 }
 body {
 	font: 13px/25px "Lucida Console", Monaco, monospace ;
-	color:#484848;
+	color:aqua;
 	min-width:1280px;
 	background: black;
 }
@@ -68,7 +68,7 @@ a:hover {
 
      font-family : "Lucida Console", Monaco, monospace;
 	font-weight:normal;
-	color:aqua;
+	color:purple;
 	font-size:50px;
 	line-height:72px;
 }
@@ -300,7 +300,7 @@ ul.menu li a:hover, ul.menu li.current a {
 #content {
 	width:100%;
 	padding:0px 0px 1px 0;
-	background:yellow;
+	background:purple;
 }
 .img-border {
 	border:#fff 8px solid;
