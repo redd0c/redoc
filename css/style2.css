@@ -1,16 +1,16 @@
-
-html body {
-	font: 13px/25px "Lucida Console", Monaco, monospace ;
-	color:aqua;
-	background: black;
-	width:100%;
+/* Global properties ======================================================== */
+html {
+    background:purple;
+	width:1366px;
 	padding:0;
 	margin:0;
-}	
+}
 body {
-	min-width:1080px;
-}	
-
+	font: 13px/25px "Lucida Console", Monaco, monospace ;
+	color:aqua;
+	width:100%;
+	background: black;
+}
 .ic {
 	border:0;
 	float:right;
@@ -21,7 +21,7 @@ body {
 	font-size:10px;
 	margin:-220% 0 0 0;
 	overflow:hidden;
-	padding:0
+	padding:0;
 }
 /***********************************************************************/
 a {
@@ -34,8 +34,8 @@ a:hover {
 }
 .button {
 	background:url(../images/button.png) 0 0 no-repeat;
-	color:aqua;
-	font-size:15px;
+	color:#000;
+	font-size:24px;
 	line-height:30px;
 	display:inline-block;
 	padding: 2px 0 5px 43px;
@@ -66,7 +66,7 @@ a:hover {
 }
 .text-1 {
 
-     font-family : "Lucida Console", Monaco, monospace;
+    font-family : "Lucida Console", Monaco, monospace;
 	font-weight:normal;
 	color:purple;
 	font-size:50px;
@@ -129,11 +129,11 @@ ul.list-1 li a:hover {
 .wrapper {
 	width:100%;
 	overflow:hidden;
-	position:relative;
+	position:relative
 }
 .wrap {
 	overflow:hidden;
-	position:relative;
+	position:relative
 }
 .extra-wrap {
 	overflow:hidden;
@@ -209,49 +209,53 @@ ul.list-1 li a:hover {
 	padding-bottom:12px;
 }
 /*********************************header*************************************/
+
 header {
-	width:100%;
+    width:1366px;
 	color:black;
-	border-bottom:aqua 2px solid;
-	border-top:aqua 2px solid;
+	border-bottom:aqua 1px solid;
 }
 header>div {
-	width:100%;
+    width:1366px;
 	background:url(../images/header-bg-shadow.png) 0 bottom repeat-x;
-	padding-bottom:1px;
+	
 }
 header>div>div {
-	width:1080px;
+	width:1366px;
 	margin:0 auto;
 }
 h1 {
 	display:inline-block;
-	z-index:1080;
-	margin:16px 1px 0 10px;
+	z-index:1111;
+	margin:16px 0px 10px 15px;
 	position:relative;
 	float:left;
 }
 nav {
+    width:1366px;
 	display:inline-block;
-	z-index:1080;
+	z-index:111;
 	position:relative;
-	float:right;
+	float:center;
+	overflow:hidden;
+	margin:0 auto;
+	padding:0px 0px 10px 0;
 }
 ul.menu {
-	margin:28px 10px 0px 0px;
+	margin:25px 5px 0px 0px;
 	display:inline-block;
 }
 ul.menu li {
 	float:left;
-	line-height:3px;
-	margin:0px 0px 0px 48px;
+	line-height:5px;
+	margin:0px 0px 20px 52px;
 }
 ul.menu li:hover, ul.menu li.current {
 }
 ul.menu li a {
     font: "Lucida Console", Monaco, monospace;
 	font-size:29px;
-	line-height:15px;
+	line-height:1px;
 	color:aqua;
 	display:inline-block;
 }
@@ -298,7 +302,7 @@ ul.menu li a:hover, ul.menu li.current a {
 #content {
 	width:100%;
 	padding:0px 0px 1px 0;
-	background:#050542;
+	background:purple;
 }
 .img-border {
 	border:#fff 8px solid;
